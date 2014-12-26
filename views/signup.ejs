@@ -1,0 +1,58 @@
+
+
+
+
+
+<html>
+<head>
+	<title>Sign up with Github</title>
+	<link rel="stylesheet" href="views/css/bootstrap.css">
+	<link rel="stylesheet" href="views/css/simple-sidebar.css">
+</head>
+<body>
+	<!-- begin #sidebar-wrapper-->
+
+	<div id="wrapper">
+		<div id="sidebar-wrapper">
+			<ul class="sidebar-nav">
+				<li class="sidebar-brand">
+					<a href="#">Slidr</a>
+				</li>
+				<li>
+					<a href="/">Home</a>
+				</li>
+				<li>
+					<a href="/userProfile">Profile</a>
+				</li>
+				<li>
+					<a href="#">About</a>
+				</li>
+			</ul>
+		</div>
+		<!-- /#sidebar-wrapper-->
+		<!-- begin page content wrapper-->
+		<div id="page-content-wrapper">
+			<h1 class="col-sm-offset-1">Sign up with Github</h1>
+			<form action="/users/new" method="POST">
+				<div class="row">
+					<div class="col-sm-offset-1 col-sm-4">
+					  <input type="text" name="username" placeholder="What's your name?" class="form-control" autofocus>
+					</div>
+					<div class="col-sm-offset-1 col-sm-4">
+					  <input type="text" name="github_username" placeholder="Github username" class="form-control">
+					</div>
+					<div class="col-sm-offset-1 col-sm-4">
+					  <input type="password" name="password" placeholder="Choose a password" class="form-control">
+					</div>
+					<div class="col-sm-7">
+						<input type="submit" class="btn btn-success">
+					</div>
+				</div>
+			</form>
+			<!-- /#page-content-wrapper-->
+		</div>
+
+	</div>
+
+</body>
+</html>

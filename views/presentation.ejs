@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title>Slidr</title>
+	<link rel="stylesheet" href="views/css/bootstrap.css">
+
+</head>
+<body style="background: teal">
+	<nav class="nav navbar-default">
+		<ul class="nav nav-pills">
+  			<li role="presentation" class="active btn btn-default">
+				<a href="/">Home</a>
+			</li>
+  		</ul>
+	</nav>
+	<div class="wrapper">
+		<div id="slidr-ul" style="height: 100%; width: 100%">
+			<% for(var i = 0; i<slides.length; i++) { %>
+				<div data-slidr="<%= i %>"> <%- slides[i] %> </div>
+			<% } %>
+
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="/views/slidr.js"></script>
+<script type="text/javascript">
+	slidr.create('slidr-ul').start();
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<div data-slidr="one">Hula Duck</div>
+			<div data-slidr="two">Captain Duck</div>
+			<div data-slidr="three">Doge Duck</div>
+			<div data-slidr="four">Warrior Duck</div>
+			<div data-slidr="five">Cat Duck</div> -->
